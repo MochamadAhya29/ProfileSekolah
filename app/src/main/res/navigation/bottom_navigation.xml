@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/sekolahFragment">
+
+    <fragment
+        android:id="@+id/galeriFragment"
+        android:label="fragment_galeri"
+        android:name="com.satriaamrudito.profilesekolah.fragments.GaleriFragment"
+        tools:layout="@layout/fragment_galeri"/>
+
+    <fragment
+        android:id="@+id/prestasiFragment"
+        android:label="fragment_prestasi"
+        android:name="com.satriaamrudito.profilesekolah.fragments.PrestasiFragment"
+        tools:layout="@layout/fragment_prestasi"/>
+
+    <fragment
+        android:id="@+id/sekolahFragment"
+        android:name="com.satriaamrudito.profilesekolah.fragments.SekolahFragment"
+        android:label="fragment_sekolah"
+        tools:layout="@layout/fragment_sekolah"/>
+
+    <fragment
+        android:id="@+id/founderFragment"
+        android:label="fragment_founder"
+        android:name="com.satriaamrudito.profilesekolah.fragments.FounderFragment"
+        tools:layout="@layout/fragment_founder"/>
+
+    <fragment
+        android:name="com.satriaamrudito.profilesekolah.fragments.EkskulFragment"
+        android:id="@+id/ekskulFragment"
+        android:label="fragment_ekskul"
+        tools:layout="@layout/fragment_ekskul"/>
+
+
+
+</navigation>

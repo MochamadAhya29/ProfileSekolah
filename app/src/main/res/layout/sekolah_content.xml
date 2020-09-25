@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/sekolah_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Judul"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/npsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="NPSN"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/sekolah_title"
+        app:layout_constraintStart_toStartOf="@+id/sekolah_title"
+        app:layout_constraintTop_toBottomOf="@+id/sekolah_title" />
+
+    <TextView
+        android:id="@+id/txt_npsn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="NPSN"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintEnd_toEndOf="@+id/sekolah_title"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sekolah_title"
+        app:layout_constraintTop_toBottomOf="@+id/npsn" />
+
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Alamat"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_npsn"
+        app:layout_constraintStart_toStartOf="@+id/txt_npsn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_npsn" />
+
+    <TextView
+        android:id="@+id/txt_alamat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Alamatnya"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/alamat"
+        app:layout_constraintStart_toStartOf="@+id/alamat"
+        app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+    <TextView
+        android:id="@+id/telepon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Telepon"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_npsn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_npsn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_alamat" />
+
+    <TextView
+        android:id="@+id/txt_telepon"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Teleponnya"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/alamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/alamat"
+        app:layout_constraintTop_toBottomOf="@+id/telepon" />
+
+    <TextView
+        android:id="@+id/website"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Website"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txt_npsn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txt_npsn"
+        app:layout_constraintTop_toBottomOf="@+id/txt_telepon" />
+
+    <TextView
+        android:id="@+id/txt_website"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Websitenya"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        app:layout_constraintEnd_toEndOf="@+id/alamat"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/alamat"
+        app:layout_constraintTop_toBottomOf="@+id/website" />
+
+    <TextView
+        android:id="@+id/sosmed"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Sosmed"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+        app:layout_constraintEnd_toEndOf="@+id/txt_website"
+        app:layout_constraintStart_toStartOf="@+id/txt_website"
+        app:layout_constraintTop_toBottomOf="@+id/txt_website" />
+
+    <ImageButton
+        android:id="@+id/logo_instagram"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sosmed"
+        app:srcCompat="@drawable/ic_instagram_logo" />
+
+    <ImageButton
+        android:id="@+id/logo_twitter"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/logo_instagram"
+        app:layout_constraintTop_toBottomOf="@+id/logo_instagram"
+        app:srcCompat="@drawable/ic_twitter_logo_blue" />
+
+    <ImageButton
+        android:id="@+id/logo_facebook"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/logo_instagram"
+        app:layout_constraintTop_toBottomOf="@+id/logo_twitter"
+        app:srcCompat="@drawable/ic_facebook_logo" />
+
+    <TextView
+        android:id="@+id/txt_instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Instagram"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_instagram"
+        app:layout_constraintStart_toEndOf="@+id/logo_instagram"
+        app:layout_constraintTop_toTopOf="@+id/logo_instagram" />
+
+    <TextView
+        android:id="@+id/txt_twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Twitter"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_twitter"
+        app:layout_constraintStart_toEndOf="@+id/logo_twitter"
+        app:layout_constraintTop_toTopOf="@+id/logo_twitter" />
+
+    <TextView
+        android:id="@+id/txt_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Facebook"
+        app:layout_constraintBottom_toBottomOf="@+id/logo_facebook"
+        app:layout_constraintStart_toEndOf="@+id/logo_facebook"
+        app:layout_constraintTop_toTopOf="@+id/logo_facebook" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradien_biru"
+    tools:context=".fragments.FounderFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="125dp"
+        android:layout_height="125dp"
+        android:elevation="8dp"
+        android:background="@drawable/cvi_foto"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_judul"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Nama Kespek"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintEnd_toEndOf="@+id/cardView"
+        app:layout_constraintStart_toStartOf="@+id/cardView"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/latarbelakang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Latar Belakang"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_latarbelakang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="zsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfvzsxdctyfvgbhnjmZsxcdfvbghnxsxdcfghbdsJHvfhjsgkfhjeavjfehafaevajevfkaejhjhfaevajfvajvkfv."
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                app:layout_constraintStart_toStartOf="@+id/latarbelakang"
+                app:layout_constraintTop_toBottomOf="@+id/latarbelakang" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Email"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_latarbelakang" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Deskripsi Email"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+                app:layout_constraintStart_toStartOf="@+id/latarbelakang"
+                app:layout_constraintTop_toBottomOf="@+id/email" />
+
+            <TextView
+                android:id="@+id/sosmed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sosmed"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_email" />
+
+            <Button
+                android:id="@+id/btn_facebook"
+                style="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/colorFacebook"
+                android:text="Facebook"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/sosmed"
+                app:layout_constraintTop_toBottomOf="@+id/sosmed" />
+
+            <Button
+                android:id="@+id/btn_instagram"
+                style="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorInstagram"
+                android:text="Instagram"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/sosmed"
+                app:layout_constraintTop_toBottomOf="@+id/btn_facebook" />
+
+            <Button
+                android:id="@+id/btn_twitter"
+                style="@style/TextAppearance.MaterialComponents.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:backgroundTint="@color/colorTwitter"
+                android:text="Twitter"
+                android:textColor="@android:color/white"
+                app:layout_constraintStart_toStartOf="@+id/sosmed"
+                app:layout_constraintTop_toBottomOf="@+id/btn_instagram" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
