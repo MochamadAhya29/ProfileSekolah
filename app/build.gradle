@@ -49,6 +49,9 @@ dependencies {
     // LifeCycle digunakan untuk mengatur syntax dan Asyntask
     implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.2.0'
 
+    // add library circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
